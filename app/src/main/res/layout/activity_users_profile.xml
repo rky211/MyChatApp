@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UsersProfileActivity">
+
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_img"
+        android:background="@android:color/black">
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/profile_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="profile_Status"
+            android:layout_below="@+id/profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/profile_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Friends"
+            android:layout_below="@+id/profile_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/send_frnd_reqst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Friend Request"
+            android:layout_below="@+id/profile_friends"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            />
+        <Button
+            android:id="@+id/reject_frnd_reqst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject Friend Request"
+            android:layout_below="@+id/send_frnd_reqst"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

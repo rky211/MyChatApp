@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logsignactivity.RegisterActivity">
+
+    <include
+        android:id="@+id/log_page_app_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <EditText
+        android:id="@+id/log_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_email"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/log_page_app_toolbar"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/log_pswrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_pswrd"
+        android:layout_below="@id/log_email"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_below="@id/log_pswrd"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget"
+        android:layout_below="@id/login"
+        android:layout_toRightOf="@id/login"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
